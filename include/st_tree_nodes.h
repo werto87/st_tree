@@ -178,9 +178,9 @@ struct node_base {
     tree_type* _tree;
     size_type _size;
     node_type* _parent;
-    data_type _data;
     cs_type _children;
     max_maintainer<size_type, allocator_type> _depth;
+    data_type _data;
 
     bool _default_constructed() const {
         return (NULL == _parent) && (NULL == _tree);
